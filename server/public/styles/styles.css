@@ -1,0 +1,40 @@
+.jumbotron {
+    margin-bottom: 0px;
+    background-image: url(http://bit.ly/2gw9tiU);
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+
+
+}
+.jumbotron h1{
+  color: black;
+
+}
+
+h2, h1 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+.row {
+  background-color: black;
+}
+
+.nav {
+  width: 50vw;
+  background-color: black;
+  color: white;
+}
+
+/** {
+  border-radius: 0 !important;
+}*/
+.Inactive{
+  background-color: rgba(47, 45, 45, 0.4);
+
+}

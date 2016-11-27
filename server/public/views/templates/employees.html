@@ -1,0 +1,24 @@
+<h2>Total Cost of Salaries Monthly: {{employeeController.monthly[0].sum}}</h2>
+
+<table class="table table-hover table-inverse">
+  <tr>
+<th>First Name</th>
+<th>Last Name</th>
+<th>ID Number</th>
+<th>Job Title</th>
+<th>Salary</th>
+<th>Active/Inactive</th>
+<th></th>
+</tr>
+<tr ng-repeat='person in employeeController.employees'>
+  <td ng-model='person.first_name' class={{person.checkbox}}>{{person.first_name}}</td>
+  <td ng-model='person.last_name' class={{person.checkbox}}>{{person.last_name}}</td>
+  <td ng-model='person.id_number' class={{person.checkbox}}>{{person.id_number}}</td>
+  <td ng-model='person.job_title' class={{person.checkbox}}>{{person.job_title}}</td>
+  <td ng-model='person.salary' class={{person.checkbox}}>{{person.salary}}</td>
+  <!-- <td><button type="button" ng-click= "employeeController.activity(person)">Click</button></td> -->
+  <td class={{person.checkbox}}><input type="checkbox" ng-model= "person.active" ng-change="employeeController.activity(person)"
+    name="activeCheckbox"  > {{person.checkbox}}</td>
+  <td class={{person.checkbox}}><button class="btn btn-danger" type="button" ng-click="employeeController.deleteEmployee(person)">Delete</button></td>
+</tr>
+</table>

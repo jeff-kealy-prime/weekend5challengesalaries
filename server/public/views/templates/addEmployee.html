@@ -1,0 +1,36 @@
+<!-- <body ng-app="myApp"> -->
+  <main class="container" ng-controller="AddEmployeeController as ae">
+    <header>
+      <h1>Employee salaries</h1>
+    </header>
+    <h2>Add an Employee</h2>
+    <form id="salary-form">
+      <div class="form-group">
+        <label for="firstName">First Name:</label>
+        <input type="text" ng-model="ae.newEmployee.firstName" name="firstName" class="form-control" />
+      </div>
+
+      <div class="form-group">
+        <label for="lastName">Last Name:</label>
+        <input type="text" ng-model="ae.newEmployee.lastName" name="lastName" class="form-control" />
+      </div>
+
+      <div class="form-group">
+        <label for="idNumber">ID number:</label>
+        <input type="number" ng-model="ae.newEmployee.idNumber" name="idNumber"  class="form-control"/>
+      </div>
+
+      <div class="form-group">
+        <label for="jobTitle">Job Title:</label>
+        <input type="text" ng-model="ae.newEmployee.jobTitle" name="jobTitle" class="form-control"/>
+      </div>
+
+      <div class="form-group">
+        <label for="salary">Salary:</label>
+        <input type="number" ng-model="ae.newEmployee.salary" name="salary" class="form-control"/>
+      </div>
+
+
+      <button class="btn btn-default" ng-click="ae.addEmployees()">Submit</button>
+    </form>
+    
